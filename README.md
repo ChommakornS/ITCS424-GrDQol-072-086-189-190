@@ -5,3 +5,10 @@ MISS CHUTWEERAYA SRIWILAILAK 6488086
 MISS CHOMMAKORN SONTESADISAI 6488189
 
 MISS NATTANICHA SINSAWET 6488190
+
+# Installation
+```
+flutter pub get
+flutter pub outdated
+flutter pub upgrade --major-versions
+```
