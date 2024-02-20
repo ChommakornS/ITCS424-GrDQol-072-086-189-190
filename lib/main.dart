@@ -1,38 +1,25 @@
 import 'package:flutter/material.dart';
-
-import 'screens/screens.dart';
-
+import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:news_app/Config/Theme.dart';
+import 'package:news_app/Demopage.dart';
+import 'package:news_app/HomePageController.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter News App UI',
-      theme: ThemeData(
-        primarySwatch: Colors.grey,
-      ),
-      initialRoute: '/',
-      routes: {
-        HomeScreen.routeName: (context) => const HomeScreen(),
-        DiscoverScreen.routeName: (context) => const DiscoverScreen(),
-        ArticleScreen.routeName: (context) => const ArticleScreen(),
-        
-        ProfileScreen.routeName: (context) => const ProfileScreen(), 
-        FavScreen.routeName: (context) => const FavScreen(),
-        MapScreen.routeName: (context) => const MapScreen(),
-        WriteScreen.routeName: (context) => const WriteScreen(),
-        AddScreen.routeName: (context) => const AddScreen(), 
-      },
+      title: 'DQol',
+      theme: lightTheme,
+      themeMode: ThemeMode.system,
+      darkTheme: darkTheme,
+      home: const HomePageController(),
     );
   }
 }
-
-// // UI based on https://dribbble.com/shots/15193792-News-iOS-mobile-app/attachments/6937008?mode=media
-//------------------------------
