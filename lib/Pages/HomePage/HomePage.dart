@@ -44,7 +44,7 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   const Text(
-                    "Dqol.",
+                    "DQOL.",
                     style: TextStyle(
                       fontSize: 35,
                       fontFamily: "Poppins",
