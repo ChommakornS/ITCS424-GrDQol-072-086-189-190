@@ -63,6 +63,7 @@ class NewsDetailsPage extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
+                    color: const Color.fromARGB(255, 201, 199, 199),
                   ),
                 ),
                 const SizedBox(height: 10),
