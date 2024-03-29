@@ -27,10 +27,10 @@ const lightDivColor = Color(0xffF5F6FA);
 const lightPrimaryColor = Color(0xffA6A2A2);
 const lightLableColor = Color(0xff8E8E8E);
 
-//😍  Dark Theme Color
+//😍  Dark Theme Color 191B28
 const darkBgColor = Color(0xff191B28);
 const darkFontColor = Color(0xffF5F6FA);
-const darkDivColor = Color(0xff34374B);
+const darkDivColor = Color(0xffffffff);
 const darkPrimaryColor = Color(0xffFF9900);
 const darkLableColor = Color(0xff9E9E9E);
 

@@ -172,8 +172,8 @@ class _NewsPageState extends State<NewsPage> {
             style: TextStyle(fontFamily: 'Poppins'),
           ),
           style: ElevatedButton.styleFrom(
-            primary: Colors.white, // Set the background color to white
-            onPrimary: Colors.black,
+            backgroundColor: Colors.white, // Set the background color to white
+            foregroundColor: Colors.black,
             elevation: 10,
           ),
         ),

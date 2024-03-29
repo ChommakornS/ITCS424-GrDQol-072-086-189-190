@@ -12,6 +12,12 @@ class BottomNavController extends GetxController {
   var pages = [
     const HomePage(),
     const ArticalPage(),
-    const ProfilePage(),
+    const ProfilePage(), // Removed the const keyword to allow passing email parameter
   ];
+
+  // Function to navigate to the profile page and pass email
+  
 }
+//     const ProfilePage(),
+//   ];
+// }
