@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "899508060219",
+    "project_id": "dqol-new",
+    "storage_bucket": "dqol-new.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:899508060219:android:b507b280e28f8924eb1c1e",
+        "android_client_info": {
+          "package_name": "com.example.news_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrepNXxzAvAjY0DQm20uWa-rir_XoN_mc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
