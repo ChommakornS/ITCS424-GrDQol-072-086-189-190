@@ -34,13 +34,13 @@ class HomePage extends StatelessWidget {
                       );
                     },
                     child: Container(
-                      width: 50,
-                      height: 50,
-                      decoration: BoxDecoration(
-                        color: Theme.of(context).colorScheme.primaryContainer,
-                        borderRadius: BorderRadius.circular(100),
-                      ),
-                      child: const Icon(Icons.pin_drop_rounded),
+                      // width: 50,
+                      // height: 50,
+                      // decoration: BoxDecoration(
+                      //   color: Theme.of(context).colorScheme.primaryContainer,
+                      //   borderRadius: BorderRadius.circular(100),
+                      // ),
+                      // child: const Icon(Icons.pin_drop_rounded),
                     ),
                   ),
                   const Text(
