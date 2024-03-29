@@ -4,7 +4,11 @@ import 'package:news_app/Config/Theme.dart';
 import 'package:news_app/Demopage.dart';
 import 'package:news_app/HomePageController.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform
+  );
   runApp(const MyApp());
 }
 
