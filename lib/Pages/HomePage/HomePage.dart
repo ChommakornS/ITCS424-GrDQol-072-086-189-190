@@ -7,8 +7,8 @@ import 'package:news_app/Pages/HomePage/Widgets/NewsTile.dart';
 import 'package:news_app/Pages/HomePage/Widgets/TrandingCard.dart';
 import 'package:news_app/Pages/NewDetails/NewsDetails.dart';
 import 'package:news_app/Pages/MapPage/MapPage.dart'; // Import MapScreen
-import 'package:news_app/Pages/WritePage/WritePage.dart'; // Import MapScreen
-
+import 'package:news_app/Pages/AddNewsPage/AddNewsPage.dart'; // Import MapScreen
+import 'package:news_app/Pages/ContentPage/ContentPage.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -30,17 +30,17 @@ class HomePage extends StatelessWidget {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => MapScreen()),
+                        MaterialPageRoute(builder: (context) => ContentPage()),
                       );
                     },
                     child: Container(
-                      // width: 50,
-                      // height: 50,
-                      // decoration: BoxDecoration(
-                      //   color: Theme.of(context).colorScheme.primaryContainer,
-                      //   borderRadius: BorderRadius.circular(100),
-                      // ),
-                      // child: const Icon(Icons.pin_drop_rounded),
+                      width: 50,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).colorScheme.primaryContainer,
+                        borderRadius: BorderRadius.circular(100),
+                      ),
+                      child: const Icon(Icons.article_outlined),
                     ),
                   ),
                   const Text(
@@ -57,7 +57,7 @@ class HomePage extends StatelessWidget {
                     onTap: () {
                      Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => WritePage()),
+                        MaterialPageRoute(builder: (context) => NewsPage()),
                       );
                     },
                     child: Container(
@@ -117,19 +117,19 @@ class HomePage extends StatelessWidget {
                           ),
                   )),
               const SizedBox(height: 20),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    "News For you",
-                    style: Theme.of(context).textTheme.bodyLarge,
-                  ),
-                  Text(
-                    "See All",
-                    style: Theme.of(context).textTheme.labelSmall,
-                  )
-                ],
-              ),
+              // Row(
+              //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              //   children: [
+              //     Text(
+              //       "News For you",
+              //       style: Theme.of(context).textTheme.bodyLarge,
+              //     ),
+              //     Text(
+              //       "See All",
+              //       style: Theme.of(context).textTheme.labelSmall,
+              //     )
+              //   ],
+              // ),
               const SizedBox(height: 20),
               Obx(
                 () => newsController.isNewsForULoading.value
@@ -148,7 +148,7 @@ class HomePage extends StatelessWidget {
                                   Get.to(NewsDetailsPage(news: e));
                                 },
                                 imageUrl: e.urlToImage ??
-                                    "https://static.toiimg.com/thumb/msid-46918916,width=1200,height=900/46918916.jpg",
+                                    "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1200px-No_image_available.svg.png",
                                 title: e.title!,
                                 author: e.author ?? "Unknown",
                                 time: e.publishedAt!,
@@ -158,19 +158,19 @@ class HomePage extends StatelessWidget {
                       ),
               ),
               const SizedBox(height: 20),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    "Tesla News",
-                    style: Theme.of(context).textTheme.bodyLarge,
-                  ),
-                  Text(
-                    "See All",
-                    style: Theme.of(context).textTheme.labelSmall,
-                  )
-                ],
-              ),
+              // Row(
+              //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              //   children: [
+              //     Text(
+              //       "Tesla News",
+              //       style: Theme.of(context).textTheme.bodyLarge,
+              //     ),
+              //     Text(
+              //       "See All",
+              //       style: Theme.of(context).textTheme.labelSmall,
+              //     )
+              //   ],
+              // ),
               const SizedBox(height: 20),
               Obx(
                 () => newsController.isTeslaLoading.value
@@ -188,8 +188,7 @@ class HomePage extends StatelessWidget {
                                 ontap: () {
                                   Get.to(NewsDetailsPage(news: e));
                                 },
-                                imageUrl: e.urlToImage ??
-                                    "https://static.toiimg.com/thumb/msid-46918916,width=1200,height=900/46918916.jpg",
+                                imageUrl: e.urlToImage ?? "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1200px-No_image_available.svg.png",
                                 title: e.title!,
                                 author: e.author ?? "Unknown",
                                 time: e.publishedAt!,
@@ -199,19 +198,19 @@ class HomePage extends StatelessWidget {
                       ),
               ),
               const SizedBox(height: 20),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    "Apple News",
-                    style: Theme.of(context).textTheme.bodyLarge,
-                  ),
-                  Text(
-                    "See All",
-                    style: Theme.of(context).textTheme.labelSmall,
-                  )
-                ],
-              ),
+              // Row(
+              //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              //   children: [
+              //     Text(
+              //       "Apple News",
+              //       style: Theme.of(context).textTheme.bodyLarge,
+              //     ),
+              //     Text(
+              //       "See All",
+              //       style: Theme.of(context).textTheme.labelSmall,
+              //     )
+              //   ],
+              // ),
               const SizedBox(height: 20),
               SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
@@ -243,19 +242,19 @@ class HomePage extends StatelessWidget {
                           ),
                   )),
               const SizedBox(height: 20),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    "Business News",
-                    style: Theme.of(context).textTheme.bodyLarge,
-                  ),
-                  Text(
-                    "See All",
-                    style: Theme.of(context).textTheme.labelSmall,
-                  )
-                ],
-              ),
+              // Row(
+              //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              //   children: [
+              //     Text(
+              //       "Business News",
+              //       style: Theme.of(context).textTheme.bodyLarge,
+              //     ),
+              //     Text(
+              //       "See All",
+              //       style: Theme.of(context).textTheme.labelSmall,
+              //     )
+              //   ],
+              // ),
               const SizedBox(height: 20),
               Obx(
                 () => newsController.isBuisLoading.value
