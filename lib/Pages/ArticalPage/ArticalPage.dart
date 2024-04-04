@@ -29,7 +29,7 @@ class ArticalPage extends StatelessWidget {
                             Get.to(NewsDetailsPage(news: e));
                           },
                           imageUrl: e.urlToImage ??
-                              "https://images.bhaskarassets.com/webp/thumb/512x0/web2images/521/2024/01/16/317_1705413514.jpg",
+                              "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1200px-No_image_available.svg.png",
                           title: e.title!,
                           author: e.author ?? "Unknown",
                           time: e.publishedAt!,

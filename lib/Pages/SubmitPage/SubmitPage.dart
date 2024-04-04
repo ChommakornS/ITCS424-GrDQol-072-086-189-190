@@ -19,7 +19,7 @@ class SubmittedPage extends StatelessWidget {
             color: Colors.black,
             child: Center(
               child: Text(
-                "My Article",
+                "Add Article",
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,

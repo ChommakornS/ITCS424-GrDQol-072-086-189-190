@@ -49,7 +49,7 @@ class NewsDetailsPage extends StatelessWidget {
                           borderRadius: BorderRadius.circular(20),
                           child: Image.network(
                             news.urlToImage ??
-                                "https://static.toiimg.com/thumb/msid-46918916,width=1200,height=900/46918916.jpg",
+                                "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1200px-No_image_available.svg.png",
                             fit: BoxFit.cover,
                           ),
                         ),

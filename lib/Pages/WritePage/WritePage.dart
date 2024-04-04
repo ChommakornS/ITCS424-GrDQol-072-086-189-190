@@ -19,7 +19,7 @@ class WritePage extends StatelessWidget {
               color: Colors.black, // Adding black background color
               child: Center(
                 child: Text(
-                  "My Article",
+                  "Add Article",
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,

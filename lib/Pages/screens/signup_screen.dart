@@ -289,3 +289,30 @@ class _SignUpScreenState extends State<SignUpScreen> {
     }
   }
 }
+
+
+  String? _validateUsername(String value) {
+    if (value.isEmpty) {
+      return "Please enter username";
+    }
+    return null;
+  }
+
+  String? _validateEmail(String value) {
+    if (value.isEmpty) {
+      return "Please enter email";
+    } else if (!RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$').hasMatch(value)) {
+      return "Please enter a valid email";
+    }
+    return null;
+  }
+
+  String? _validatePassword(String value) {
+    if (value.isEmpty) {
+      return "Please enter password";
+    } else if (value.length < 6) {
+      return "Password should be at least 6 characters long";
+    }
+    return null;
+  }
+}
