@@ -187,58 +187,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
     );
   }
 
-  // Future<void> _signUp() async {
-  //   setState(() {
-  //     usernameError = _validateUsername(usernameController.text);
-  //     emailError = _validateEmail(emailController.text);
-  //     passwordError = _validatePassword(passwordController.text);
-  //   });
-
-  //   if (usernameError != null || emailError != null || passwordError != null) {
-  //     return;
-  //   }
-
-  //   try {
-  //     // Create the user with email and password
-  //     UserCredential userCredential = await FirebaseAuth.instance.createUserWithEmailAndPassword(
-  //       email: emailController.text,
-  //       password: passwordController.text,
-  //     );
-  //     print("Created New Account");
-
-  //     // Extract the user from the userCredential
-  //     User? user = userCredential.user;
-
-  //     // Check if the user is not null
-  //     if (user != null) {
-  //       // Save additional user information in Firestore under 'users' collection
-  //       await FirebaseFirestore.instance.collection('users').doc(user.uid).set({
-  //         'username': usernameController.text,
-  //         'email': emailController.text,
-  //         // It's highly recommended not to store passwords in Firestore. Authentication handles password security.
-  //         // If you still choose to store it for some reason, ensure it's securely hashed (though this is not advised).
-  //         // 'password': passwordController.text,
-  //       });
-        
-  //       // Navigate to SignInScreen or HomePage after successful signup and data storage
-  //       Navigator.pushAndRemoveUntil(
-  //         context,
-  //         MaterialPageRoute(builder: (context) => SignInScreen()), // Assuming you want to navigate the user to the home page
-  //         (Route<dynamic> route) => false,
-  //       );
-  //     }
-  //   } catch (error) {
-  //     if (error is FirebaseAuthException) {
-  //       if (error.code == 'email-already-in-use') {
-  //         setState(() {
-  //           emailError = "The email address is already in use by another account.";
-  //         });
-  //       } else {
-  //         print("Error $error");
-  //       }
-  //     }
-  //   }
-  // }
   Future<void> _signUp() async {
   setState(() {
     usernameError = _validateUsername(usernameController.text);

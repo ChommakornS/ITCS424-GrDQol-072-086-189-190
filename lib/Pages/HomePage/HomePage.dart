@@ -6,7 +6,6 @@ import 'package:news_app/Controller/NewsController.dart';
 import 'package:news_app/Pages/HomePage/Widgets/NewsTile.dart';
 import 'package:news_app/Pages/HomePage/Widgets/TrandingCard.dart';
 import 'package:news_app/Pages/NewDetails/NewsDetails.dart';
-import 'package:news_app/Pages/MapPage/MapPage.dart'; // Import MapScreen
 import 'package:news_app/Pages/AddNewsPage/AddNewsPage.dart'; // Import MapScreen
 import 'package:news_app/Pages/ContentPage/ContentPage.dart';
 
@@ -273,7 +272,7 @@ class HomePage extends StatelessWidget {
                                   Get.to(NewsDetailsPage(news: e));
                                 },
                                 imageUrl: e.urlToImage ??
-                                    "https://static.toiimg.com/thumb/msid-46918916,width=1200,height=900/46918916.jpg",
+                                    "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1200px-No_image_available.svg.png",
                                 title: e.title!,
                                 author: e.author ?? "Unknown",
                                 time: e.publishedAt!,
